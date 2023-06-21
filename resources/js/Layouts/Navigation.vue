@@ -28,7 +28,7 @@
           </NavLink>
         </li>
 
-        <li class="relative px-6 py-3">
+        <!-- <li class="relative px-6 py-3">
           <NavLink :href="route('users.index')" :active="route().current('users.index')">
             <template #icon>
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -77,7 +77,7 @@
                 <a class="w-full" href="#">Child menu</a>
               </li>
             </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
   </aside>
