@@ -53,18 +53,20 @@
   </AuthenticatedLayout>
 </template>
 
-<script setup>
+<script>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
 import axios from 'axios';
 
-defineProps({
-    sentences: Object,
-    modalShowing: Boolean
-});
-</script>
-<script>
 export default {
+        props:{
+            sentences: Object,
+            modalShowing: Boolean
+        },
+        components:{
+            AuthenticatedLayout,
+            Head
+        },
         data() {
             return {
                 sentence: [],
