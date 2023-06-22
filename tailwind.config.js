@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -16,6 +17,17 @@ module.exports = {
             },
         },
     },
+
+    safelist: [
+        {
+          pattern: /text-+/,
+          variants: ['lg', 'hover', 'focus', 'lg:hover'],
+        },
+        {
+            pattern: /italic/,
+            variants: ['hover', 'focus']
+        }
+    ],
 
     plugins: [require('@tailwindcss/forms')],
 };
